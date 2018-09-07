@@ -10,21 +10,21 @@
 int main(){
 	
 	// Declare the variables
-	int n;
-	int average;
+	double n;
+	double average;
 	int i;
-	int k;
+	double k;
 	
 	// I start the loop with a "do"
 	do{
 		printf("Give me a number: ");
-		scanf("%i", &n);
+		scanf("%lf", &n);
 		k+=n; // I store in "k" the numbers that the user inputs
 		i++; // I store the amounts of times that the user inputs a number
 	}while(n!=0); // The loop will stops when the user enters zero in the program
 	
 	i-=1; // I remove -1 to "i", so that the last given value (zero) does not affect the average
 	average=k/i; // I do the operations
-	printf("\n%i", average);
+	printf("\n%lf", average);
 return 0;
 }
